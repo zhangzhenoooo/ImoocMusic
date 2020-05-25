@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="zhangz.com.imoocmusic.activitys.PlayMusicActivity">
+
+    <ImageView
+        android:id="@+id/iv_bg"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scaleType="centerCrop"
+        android:src="@mipmap/img08" />
+
+    <ImageView
+        android:id="@+id/no_bar_back"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/marginSize"
+        android:onClick="onBackClick"
+        android:padding="@dimen/marginSize"
+        android:src="@mipmap/back" />
+
+    <LinearLayout
+        android:layout_marginTop="100dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical"
+        android:gravity="center_horizontal"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="音乐名称"
+            android:textColor="@color/colorWhite"
+            android:textSize="@dimen/titleSize"
+            android:textStyle="bold" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/marginSize"
+            android:text="作者"
+            android:textColor="@color/colorWhite"
+            android:textSize="@dimen/titleSize"
+            android:textStyle="bold" />
+
+    </LinearLayout>
+
+    <zhangz.com.imoocmusic.views.PlayMusicView
+        android:id="@+id/play_music_view"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+    </zhangz.com.imoocmusic.views.PlayMusicView>
+</FrameLayout>

@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<set xmlns:android="http://schemas.android.com/apk/res/android"
+    android:shareInterpolator="@android:anim/linear_interpolator"
+    android:fillAfter="true">
+    <!--fillAfter 指针移动后保持位置-->
+    <!--指针离开动画-->
+    <rotate
+        android:fromDegrees="0"
+        android:toDegrees="-20"
+        android:pivotX="0"
+        android:pivotY="0"
+        android:duration="@integer/playneedleAnimDuration"/>
+
+</set>

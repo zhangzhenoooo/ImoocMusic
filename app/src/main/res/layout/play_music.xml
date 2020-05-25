@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <!--光盘-->
+    <FrameLayout
+        android:id="@+id/fl_play_music"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/discTopSize">
+
+        <ImageView
+            android:layout_gravity="center_horizontal"
+            android:layout_width="371dp"
+            android:layout_height="237dp"
+            android:src="@mipmap/playing" />
+
+        <!--CircleImageView-->
+        <ImageView
+            android:id="@+id/iv_play"
+            android:layout_width="40dp"
+            android:layout_height="52dp"
+            android:layout_gravity="center"
+            android:src="@mipmap/play_icon"
+            android:visibility="gone" />
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/iv_icon"
+            android:layout_width="@dimen/playMusicIcon"
+            android:layout_height="@dimen/playMusicIcon"
+            android:layout_gravity="center_horizontal"
+            app:civ_border_color="@color/colorBlack"
+            app:civ_border_width="2dp" />
+
+    </FrameLayout>
+    <!--指针-->
+    <ImageView
+        android:id="@+id/iv_needle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="@dimen/marginSize"
+        android:src="@mipmap/needle2" />
+</FrameLayout>

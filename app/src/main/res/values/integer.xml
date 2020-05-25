@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!--动画执行时间-->
+    <integer name="anim_duration">200</integer>
+    <integer name="playMusicAnimDuration">10000</integer>
+    <integer name="playneedleAnimDuration">1000</integer>
+</resources>

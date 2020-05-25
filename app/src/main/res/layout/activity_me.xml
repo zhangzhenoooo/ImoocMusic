@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="zhangz.com.imoocmusic.activitys.MeActivity">
+
+    <include layout="@layout/nav_bar"></include>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:padding="@dimen/marginSize"
+        android:orientation="horizontal">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/username"
+            android:textSize="@dimen/titleSize"
+            android:textColor="@color/colorBlack"
+            android:gravity="center"/>
+        <TextView
+            android:id="@+id/tv_username"
+            android:paddingLeft="@dimen/marginSize"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+    </LinearLayout>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:background="@color/colorDareGray"
+        android:layout_marginLeft="@dimen/marginSize"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/btn_modify"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="修改密码"
+            android:layout_margin="@dimen/marginSize"
+            android:background="@color/mainColor"
+            android:textColor="@color/colorWhite"
+            android:textSize="@dimen/titleSize"
+            />
+        <Button
+            android:id="@+id/btn_loginout"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="注销账号"
+            android:layout_margin="@dimen/marginSize"
+            android:background="@color/mainColor"
+            android:textColor="@color/colorWhite"
+            android:textSize="@dimen/titleSize"
+            />
+
+    </LinearLayout>
+
+
+
+</LinearLayout>
